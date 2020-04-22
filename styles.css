@@ -1,0 +1,350 @@
+body {
+    background-image: url('images/grungebkg.jpg');
+    background-repeat: none;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 2000px;
+}
+.mainContainer {
+    width: 100%;
+    height: 2000px;
+    display: grid;
+    grid-template-columns: [line-1] 5% [line-2] 10% [line-3] 35% [line-4] 35% [line-5] 10% [line-6] 5% [end];
+    grid-template-rows: [line-1] 100px [line-2] 40px [line-3] 100px [line-4] 225px [line-5] 300px [line-6] 300px [line-7] 400px [line-8] 50px [line-9] 100px [end];
+    grid-row-gap: 35px;
+}
+.logo {
+    background-image: url('images/logo.png');
+    background-size: cover;
+    background-repeat: none;
+    width: 200px;
+    height: 175px;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    z-index: 3;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    color: #e5e3e4;
+    font-size: 20px;
+}
+.nav {
+    width: 150px;
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+    text-align: right;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+.nav :hover {
+    color: gold;
+}
+.hambtn {
+    display: none;
+}
+.hambars {
+    width: 30px;
+    height: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.clicks {
+    cursor: pointer;
+    width: auto;
+    color: #e5e3e4;
+    font-weight: normal;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.leftClick {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: start;
+    z-index: 4;
+}
+.rightClick {
+    grid-column: 5;
+    grid-row: 4;
+    justify-self: end;
+    z-index: 4;
+}
+.contentContainer {
+    grid-column: 2 / span 4;
+    grid-row: 3 / span 2;
+    width: 100%;
+    height: 100%;
+}
+.releases {
+    width: 100%;
+    height: 100%;
+    justify-self: center; 
+}
+.cdPhoto {
+    background-image: url('images/cd_temp.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: -60px 0px;
+    width: 400px;
+    height: 300;
+} 
+.cdCopy {
+    grid-column: 4;
+    grid-row: 3;
+    width: 320px;
+    display: inline-block;
+}
+h1 {
+    color: white;
+    font-size: 30px;
+}
+h2 {
+    color: gold;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: -20px;
+}
+#preview {
+    margin-top: 20px;
+}
+p {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+.contentContainer2 {
+    grid-column: 2 / span 4;
+    grid-row: 5;
+    width: 100%;
+    height: 100%;
+}
+.theBand {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bandPhoto.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: 0px -170px;
+}
+.bandInfo {
+    grid-column: 2 / span 2;
+    grid-row: 5;
+    color: white;
+    width: 400px;
+    align-self: end;
+    font-weight: lighter;
+    padding: 20px;
+}
+.merch {
+    grid-column: 4 /span 2;
+    grid-row: 6;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/tshirt.jpg');
+    background-size: cover;    
+    background-repeat: none;
+    background-position: -20px 0px;
+}
+.merchBtn {
+    grid-column: 2 / span 2;
+    grid-row: 6;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.shopSC {
+    grid-column: 2 / span 2;
+    grid-row: 6;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 100px;
+}
+
+.contentContainer4 {
+    grid-column: 2 / span 4;
+    grid-row: 7;
+    width: 100%;
+    height: 100%;
+}
+.tour {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/tour.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: 0px -878px;
+}
+.tourBtn {
+    grid-column: 2 / span 4;
+    grid-row: 8;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+.btn {
+    width: 200px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: gold;
+    color: black;
+}
+.footer {
+    grid-column: 1 / span 6;
+    grid-row: 9;
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+}
+.copyrightLine {
+    height: 20px;
+    color: #e5e3e4;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.rrLogo {
+    background-image: url('images/rrLogo.png');
+    background-repeat: none;
+    background-size: cover;
+    width: 40px;
+    height: 50px;
+    margin: 0 auto;
+} 
+
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: lightblue;
+    }
+    .mainContainer {
+        width: 100%;
+        height: 2650px;
+        display: grid;
+        grid-template-columns: [line-1] 5% [line-2] 90% [line-3] 5% [end];
+        grid-template-rows: [line-1] 100px [line-2] 40px [line-3] 300px [line-4] 300px [line-5] 300px [line-6] 200px [line-7] 300px [line-8] 50px [line-9] 100px [line-10] 200px [line-11] 100px [line-12] 100px [end];
+        grid-row-gap: 45px;
+    }
+    .nav {
+        display: none;
+    }
+    .hambtn {
+        grid-column: 1;
+        grid-row: 3;
+        width: 30px;
+        height: 50px;
+    }
+    .hambars {
+        /* display: inline-block; */
+    }
+    .clicks {
+        display: none;
+      }
+    .contentContainer {
+        grid-column: 2;
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+    }
+    .cdPhoto {
+        background-position: 0px 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .cdCopy {
+        grid-column: 2;
+        grid-row: 4;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .contentContainer2 {
+        grid-column: 2;
+        grid-row: 5;
+        width: 100%;
+        height: 100%;
+    }
+    .theBand {
+        width: 100%;
+        height: 100%;
+        background-position: 0px 0px;
+    }
+    .bandInfo {
+        grid-column: 2;
+        grid-row: 6;
+        justify-self: center;
+        text-align: center;
+    }
+    .merch {
+        grid-column: 2;
+        grid-row: 7;
+        width: 100%;
+        height: 100%;
+        background-position: -20px 0px;
+    }
+    .merchBtn {
+        grid-column: 2;
+        grid-row: 9;
+        justify-self: center;
+        align-self: start;
+        color: white;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .shopSC {
+        grid-column: 2;
+        grid-row: 8;
+        justify-self: center;
+        align-self: end;
+        margin: 0px;
+    }
+    
+    .contentContainer4 {
+        grid-column: 2;
+        grid-row: 10;
+        width: 100%;
+        height: 100%;
+    }
+    .tour {
+        width: 100%;
+        height: 100%;
+        background-image: url('images/tour.jpg');
+        background-repeat: none;
+        background-size: cover;
+        background-position: 0px -800px;
+    }
+    .tourBtn {
+        grid-column: 2;
+        grid-row: 11;
+        justify-self: center;
+        align-self: center;
+        color: white;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .footer {
+        grid-column: 2;
+        grid-row: 12;
+        margin: 0 auto;
+        justify-self: center;
+        align-self: center;
+    }
+    
+  }
